@@ -8,7 +8,7 @@
 ## 🔧 Troubleshooting
 
 ### ❗ Error
-![GTID Error](replication_type/error_image.png)
+![GTID Error](images/error_image.png)
 
 @@GLOBAL.GTID_PURGED cannot be changed:
 the added gtid set must not overlap with @@GLOBAL.GTID_EXECUTED
@@ -68,6 +68,6 @@ mysqldump --set-gtid-purged=OFF -u root -p testdb > clean2.sql
 ### 📸 에러 해결 전 → 해결 후
 
 <p align="center">
-  <img src="replication_type/error-before.png" width="45%" />
-  <img src="replication_type/error-after.png" width="45%" />
+  <img src="images/error-before.png" width="45%" />
+  <img src="images/error-after.png" width="45%" />
 </p>
