@@ -222,6 +222,7 @@ the added gtid set must not overlap with @@GLOBAL.GTID_EXECUTED
 ### 📌 에러를 마주한 상황
 
 - Replica 서버에 직접 SQL 실행 → 새로운 GTID 생성
+  - Replica에 ReadOnly 설정을 하지 않아 직접 쓰기가 가능했음
 - 이후 복구를 위해 Source에서 dump 생성 후 Replica에 적용
 - dump 파일에 `SET @@GLOBAL.GTID_PURGED='xxx';` 구문 포함
 - Replica에 기존 `GTID_EXECUTED` 기록이 남아있어 충돌 발생
